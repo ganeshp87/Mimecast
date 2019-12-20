@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [PostCodesValidation]" parallel="tests">
+  <parameter name="test.env" value="qa"/>
+  <test name="PostCodesValidation">
+    <classes>
+      <class name="com.mimecast.qa.api.PostCodes">
+        <methods>
+          <include name="test_PostCodes"/>
+          <include name="test_PostAPI"/>
+        </methods>
+      </class> <!-- com.mimecast.qa.api.PostCodes -->
+    </classes>
+  </test> <!-- PostCodesValidation -->
+  <test name="PostCodesValidation(failed)" parallel="tests">
+    <classes>
+      <class name="com.mimecast.qa.api.PostCodes">
+        <methods>
+          <include name="test_PostCodes" invocation-numbers="3 4"/>
+          <include name="initSuite"/>
+        </methods>
+      </class> <!-- com.mimecast.qa.api.PostCodes -->
+    </classes>
+  </test> <!-- PostCodesValidation(failed) -->
+</suite> <!-- Failed suite [PostCodesValidation] -->

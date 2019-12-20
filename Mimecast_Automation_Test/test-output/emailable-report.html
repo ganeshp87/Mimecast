@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">PostCodesValidation</th></tr><tr><td><a href="#t0">PostCodesValidation</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">2</td><td class="num">4,060</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PostCodesValidation</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PostCodesValidation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.mimecast.qa.api.PostCodes</td><td><a href="#m0">test_PostCodes</a></td><td rowspan="2">1576826486688</td><td rowspan="2">82</td></tr><tr class="failedeven"><td><a href="#m1">test_PostCodes</a></td></tr><tr><th colspan="4">PostCodesValidation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.mimecast.qa.api.PostCodes</td><td><a href="#m2">test_PostAPI</a></td><td rowspan="1">1576826487191</td><td rowspan="1">847</td></tr><tr class="passedeven"><td><a href="#m3">test_PostCodes</a></td><td rowspan="3">1576826486583</td><td rowspan="3">100</td></tr><tr class="passedeven"><td><a href="#m4">test_PostCodes</a></td></tr><tr class="passedeven"><td><a href="#m5">test_PostCodes</a></td></tr></tbody></table><h2>PostCodesValidation</h2><h3 id="m0">com.mimecast.qa.api.PostCodes#test_PostCodes</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td></td><td>{
+  &quot;postcodes&quot; : [&quot;PR3 0SG&quot;, &quot;M45 6GN&quot;, &quot;EX165BL&quot;]
+}</td><td></td><td></td><td>POST</td><td>DataSetId: 4</td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.NullPointerException
+	at com.mimecast.qa.validations.PostCodeValidation.isAcutalVsExpectedIdentical(PostCodeValidation.java:59)
+	at com.mimecast.qa.api.PostCodes.test_PostCodes(PostCodes.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.mimecast.qa.api.PostCodes#test_PostCodes</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>/:TW3%201SJ</td><td>NA</td><td>{
+  &quot;status&quot;: 404,
+  &quot;error&quot;: &quot;Invalid postcode&quot;
+}</td><td>Negative</td><td></td><td>DataSetId: 5</td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.NullPointerException
+	at com.mimecast.qa.validations.PostCodeValidation.isAcutalVsExpectedIdentical(PostCodeValidation.java:59)
+	at com.mimecast.qa.api.PostCodes.test_PostCodes(PostCodes.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.mimecast.qa.api.PostCodes#test_PostAPI</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td></td><td> [&quot;PR3 0SG&quot;, &quot;M45 6GN&quot;, &quot;EX165BL&quot;]
+</td><td>{
+    &quot;status&quot;: 200,
+    &quot;result&quot;: [
+        {
+            &quot;query&quot;: &quot;PR3 0SG&quot;,
+            &quot;result&quot;: {
+                &quot;postcode&quot;: &quot;PR3 0SG&quot;,
+                &quot;quality&quot;: 1,
+                &quot;eastings&quot;: 351012,
+                &quot;northings&quot;: 440302,
+                &quot;country&quot;: &quot;England&quot;,
+                &quot;nhs_ha&quot;: &quot;North West&quot;,
+                &quot;longitude&quot;: -2.746251,
+                &quot;latitude&quot;: 53.856635,
+                &quot;european_electoral_region&quot;: &quot;North West&quot;,
+                &quot;primary_care_trust&quot;: &quot;North Lancashire Teaching&quot;,
+                &quot;region&quot;: &quot;North West&quot;,
+                &quot;lsoa&quot;: &quot;Wyre 006A&quot;,
+                &quot;msoa&quot;: &quot;Wyre 006&quot;,
+                &quot;incode&quot;: &quot;0SG&quot;,
+                &quot;outcode&quot;: &quot;PR3&quot;,
+                &quot;parliamentary_constituency&quot;: &quot;Wyre and Preston North&quot;,
+                &quot;admin_district&quot;: &quot;Wyre&quot;,
+                &quot;parish&quot;: &quot;Myerscough and Bilsborrow&quot;,
+                &quot;admin_county&quot;: &quot;Lancashire&quot;,
+                &quot;admin_ward&quot;: &quot;Brock with Catterall&quot;,
+                &quot;ced&quot;: &quot;Wyre Rural East&quot;,
+                &quot;ccg&quot;: &quot;NHS Fylde and Wyre&quot;,
+                &quot;nuts&quot;: &quot;Lancaster and Wyre&quot;,
+                &quot;codes&quot;: {
+                    &quot;admin_district&quot;: &quot;E07000128&quot;,
+                    &quot;admin_county&quot;: &quot;E10000017&quot;,
+                    &quot;admin_ward&quot;: &quot;E05009934&quot;,
+                    &quot;parish&quot;: &quot;E04005340&quot;,
+                    &quot;parliamentary_constituency&quot;: &quot;E14001057&quot;,
+                    &quot;ccg&quot;: &quot;E38000226&quot;,
+                    &quot;ced&quot;: &quot;E58000832&quot;,
+                    &quot;nuts&quot;: &quot;UKD44&quot;
+                }
+            }
+        },
+        {
+            &quot;query&quot;: &quot;M45 6GN&quot;,
+            &quot;result&quot;: {
+                &quot;postcode&quot;: &quot;M45 6GN&quot;,
+                &quot;quality&quot;: 1,
+                &quot;eastings&quot;: 380416,
+                &quot;northings&quot;: 406002,
+                &quot;country&quot;: &quot;England&quot;,
+                &quot;nhs_ha&quot;: &quot;North West&quot;,
+                &quot;longitude&quot;: -2.297052,
+                &quot;latitude&quot;: 53.55028,
+                &quot;european_electoral_region&quot;: &quot;North West&quot;,
+                &quot;primary_care_trust&quot;: &quot;Bury&quot;,
+                &quot;region&quot;: &quot;North West&quot;,
+                &quot;lsoa&quot;: &quot;Bury 019C&quot;,
+                &quot;msoa&quot;: &quot;Bury 019&quot;,
+                &quot;incode&quot;: &quot;6GN&quot;,
+                &quot;outcode&quot;: &quot;M45&quot;,
+                &quot;parliamentary_constituency&quot;: &quot;Bury South&quot;,
+                &quot;admin_district&quot;: &quot;Bury&quot;,
+                &quot;parish&quot;: &quot;Bury, unparished area&quot;,
+                &quot;admin_county&quot;: null,
+                &quot;admin_ward&quot;: &quot;Pilkington Park&quot;,
+                &quot;ced&quot;: null,
+                &quot;ccg&quot;: &quot;NHS Bury&quot;,
+                &quot;nuts&quot;: &quot;Greater Manchester North East&quot;,
+                &quot;codes&quot;: {
+                    &quot;admin_district&quot;: &quot;E08000002&quot;,
+                    &quot;admin_county&quot;: &quot;E99999999&quot;,
+                    &quot;admin_ward&quot;: &quot;E05000677&quot;,
+                    &quot;parish&quot;: &quot;E43000156&quot;,
+                    &quot;parliamentary_constituency&quot;: &quot;E14000612&quot;,
+                    &quot;ccg&quot;: &quot;E38000024&quot;,
+                    &quot;ced&quot;: &quot;E99999999&quot;,
+                    &quot;nuts&quot;: &quot;UKD37&quot;
+                }
+            }
+        },
+        {
+            &quot;query&quot;: &quot;EX165BL&quot;,
+            &quot;result&quot;: {
+                &quot;postcode&quot;: &quot;EX16 5BL&quot;,
+                &quot;quality&quot;: 1,
+                &quot;eastings&quot;: 294478,
+                &quot;northings&quot;: 112252,
+                &quot;country&quot;: &quot;England&quot;,
+                &quot;nhs_ha&quot;: &quot;South West&quot;,
+                &quot;longitude&quot;: -3.50197,
+                &quot;latitude&quot;: 50.900064,
+                &quot;european_electoral_region&quot;: &quot;South West&quot;,
+                &quot;primary_care_trust&quot;: &quot;Devon&quot;,
+                &quot;region&quot;: &quot;South West&quot;,
+                &quot;lsoa&quot;: &quot;Mid Devon 005C&quot;,
+                &quot;msoa&quot;: &quot;Mid Devon 005&quot;,
+                &quot;incode&quot;: &quot;5BL&quot;,
+                &quot;outcode&quot;: &quot;EX16&quot;,
+                &quot;parliamentary_constituency&quot;: &quot;Tiverton and Honiton&quot;,
+                &quot;admin_district&quot;: &quot;Mid Devon&quot;,
+                &quot;parish&quot;: &quot;Tiverton&quot;,
+                &quot;admin_county&quot;: &quot;Devon&quot;,
+                &quot;admin_ward&quot;: &quot;Westexe&quot;,
+                &quot;ced&quot;: &quot;Tiverton West&quot;,
+                &quot;ccg&quot;: &quot;NHS Devon&quot;,
+                &quot;nuts&quot;: &quot;Devon CC&quot;,
+                &quot;codes&quot;: {
+                    &quot;admin_district&quot;: &quot;E07000042&quot;,
+                    &quot;admin_county&quot;: &quot;E10000008&quot;,
+                    &quot;admin_ward&quot;: &quot;E05003531&quot;,
+                    &quot;parish&quot;: &quot;E04003055&quot;,
+                    &quot;parliamentary_constituency&quot;: &quot;E14000996&quot;,
+                    &quot;ccg&quot;: &quot;E38000230&quot;,
+                    &quot;ced&quot;: &quot;E58000304&quot;,
+                    &quot;nuts&quot;: &quot;UKK43&quot;
+                }
+            }
+        }
+    ]
+}</td><td>Positive</td><td>POST</td><td>DataSetId: 1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.mimecast.qa.api.PostCodes#test_PostCodes</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>/TW31SJ</td><td>NA</td><td>{
+  &quot;status&quot;: 200,
+  &quot;result&quot;: {
+    &quot;postcode&quot;: &quot;TW3 1SJ&quot;,
+    &quot;quality&quot;: 1,
+    &quot;eastings&quot;: 514664,
+    &quot;northings&quot;: 175853,
+    &quot;country&quot;: &quot;England&quot;,
+    &quot;nhs_ha&quot;: &quot;London&quot;,
+    &quot;longitude&quot;: -0.350555,
+    &quot;latitude&quot;: 51.470035,
+    &quot;european_electoral_region&quot;: &quot;London&quot;,
+    &quot;primary_care_trust&quot;: &quot;Hounslow&quot;,
+    &quot;region&quot;: &quot;London&quot;,
+    &quot;lsoa&quot;: &quot;Hounslow 015A&quot;,
+    &quot;msoa&quot;: &quot;Hounslow 015&quot;,
+    &quot;incode&quot;: &quot;1SJ&quot;,
+    &quot;outcode&quot;: &quot;TW3&quot;,
+    &quot;parliamentary_constituency&quot;: &quot;Brentford and Isleworth&quot;,
+    &quot;admin_district&quot;: &quot;Hounslow&quot;,
+    &quot;parish&quot;: &quot;Hounslow, unparished area&quot;,
+    &quot;admin_county&quot;: null,
+    &quot;admin_ward&quot;: &quot;Hounslow Central&quot;,
+    &quot;ced&quot;: null,
+    &quot;ccg&quot;: &quot;NHS Hounslow&quot;,
+    &quot;nuts&quot;: &quot;Hounslow and Richmond upon Thames&quot;,
+    &quot;codes&quot;: {
+      &quot;admin_district&quot;: &quot;E09000018&quot;,
+      &quot;admin_county&quot;: &quot;E99999999&quot;,
+      &quot;admin_ward&quot;: &quot;E05000358&quot;,
+      &quot;parish&quot;: &quot;E43000208&quot;,
+      &quot;parliamentary_constituency&quot;: &quot;E14000593&quot;,
+      &quot;ccg&quot;: &quot;E38000084&quot;,
+      &quot;ced&quot;: &quot;E99999999&quot;,
+      &quot;nuts&quot;: &quot;UKI75&quot;
+    }
+  }
+}</td><td>Positive</td><td>GET</td><td>DataSetId: 3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.mimecast.qa.api.PostCodes#test_PostCodes</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>?q=TW31SJ</td><td>NA</td><td>{
+  &quot;status&quot;: 200,
+  &quot;result&quot;: [
+    {
+      &quot;postcode&quot;: &quot;TW3 1SJ&quot;,
+      &quot;quality&quot;: 1,
+      &quot;eastings&quot;: 514664,
+      &quot;northings&quot;: 175853,
+      &quot;country&quot;: &quot;England&quot;,
+      &quot;nhs_ha&quot;: &quot;London&quot;,
+      &quot;longitude&quot;: -0.350555,
+      &quot;latitude&quot;: 51.470035,
+      &quot;european_electoral_region&quot;: &quot;London&quot;,
+      &quot;primary_care_trust&quot;: &quot;Hounslow&quot;,
+      &quot;region&quot;: &quot;London&quot;,
+      &quot;lsoa&quot;: &quot;Hounslow 015A&quot;,
+      &quot;msoa&quot;: &quot;Hounslow 015&quot;,
+      &quot;incode&quot;: &quot;1SJ&quot;,
+      &quot;outcode&quot;: &quot;TW3&quot;,
+      &quot;parliamentary_constituency&quot;: &quot;Brentford and Isleworth&quot;,
+      &quot;admin_district&quot;: &quot;Hounslow&quot;,
+      &quot;parish&quot;: &quot;Hounslow, unparished area&quot;,
+      &quot;admin_county&quot;: null,
+      &quot;admin_ward&quot;: &quot;Hounslow Central&quot;,
+      &quot;ced&quot;: null,
+      &quot;ccg&quot;: &quot;NHS Hounslow&quot;,
+      &quot;nuts&quot;: &quot;Hounslow and Richmond upon Thames&quot;,
+      &quot;codes&quot;: {
+        &quot;admin_district&quot;: &quot;E09000018&quot;,
+        &quot;admin_county&quot;: &quot;E99999999&quot;,
+        &quot;admin_ward&quot;: &quot;E05000358&quot;,
+        &quot;parish&quot;: &quot;E43000208&quot;,
+        &quot;parliamentary_constituency&quot;: &quot;E14000593&quot;,
+        &quot;ccg&quot;: &quot;E38000084&quot;,
+        &quot;ced&quot;: &quot;E99999999&quot;,
+        &quot;nuts&quot;: &quot;UKI75&quot;
+      }
+    }
+  ]
+}</td><td>Positive</td><td>GET</td><td>DataSetId: 1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.mimecast.qa.api.PostCodes#test_PostCodes</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>?q=A!234dfg</td><td>NA</td><td>{
+  &quot;status&quot;: 200,
+  &quot;result&quot;: null
+}</td><td>Negative</td><td>GET</td><td>DataSetId: 2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

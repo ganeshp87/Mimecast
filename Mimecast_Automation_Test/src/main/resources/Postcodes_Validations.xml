@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PostCodesValidation" verbose="2" parallel="tests" thread-count="1">
+                                                        
+ <parameter name="test.env" value="qa"/>   <!--  pass QA or qa   :: PROD or prod -->
+  
+  <test name="PostCodesValidation">
+	<classes>
+		<class name="com.mimecast.qa.api.PostCodes">
+			
+			<methods>
+			<include name="test_PostCodes"></include>
+			<include name="test_PostAPI"></include>
+			</methods> 
+			
+		</class>
+	</classes>
+  </test>
+</suite>
+
+

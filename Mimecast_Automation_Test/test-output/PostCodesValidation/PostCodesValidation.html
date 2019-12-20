@@ -1,0 +1,414 @@
+<html>
+<head>
+<title>TestNG:  PostCodesValidation</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PostCodesValidation</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 20 07:21:23 GMT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4060 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mimecast.qa.api.PostCodes.test_PostCodes()'><b>test_PostCodes</b><br>Test class: com.mimecast.qa.api.PostCodes<br>Parameters: , {
+  "postcodes" : ["PR3 0SG", "M45 6GN", "EX165BL"]
+}, , , POST, DataSetId: 4</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.mimecast.qa.validations.PostCodeValidation.isAcutalVsExpectedIdentical(PostCodeValidation.java:59)
+	at com.mimecast.qa.api.PostCodes.test_PostCodes(PostCodes.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1781408090", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1781408090'><pre>java.lang.NullPointerException
+	at com.mimecast.qa.validations.PostCodeValidation.isAcutalVsExpectedIdentical(PostCodeValidation.java:59)
+	at com.mimecast.qa.api.PostCodes.test_PostCodes(PostCodes.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mimecast.qa.api.PostCodes@68c4039c</td></tr>
+<tr>
+<td title='com.mimecast.qa.api.PostCodes.test_PostCodes()'><b>test_PostCodes</b><br>Test class: com.mimecast.qa.api.PostCodes<br>Parameters: /:TW3%201SJ, NA, {
+  "status": 404,
+  "error": "Invalid postcode"
+}, Negative, , DataSetId: 5</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.mimecast.qa.validations.PostCodeValidation.isAcutalVsExpectedIdentical(PostCodeValidation.java:59)
+	at com.mimecast.qa.api.PostCodes.test_PostCodes(PostCodes.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div><a href='#' onClick='toggleBox("stack-trace108998897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace108998897'><pre>java.lang.NullPointerException
+	at com.mimecast.qa.validations.PostCodeValidation.isAcutalVsExpectedIdentical(PostCodeValidation.java:59)
+	at com.mimecast.qa.api.PostCodes.test_PostCodes(PostCodes.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mimecast.qa.api.PostCodes@68c4039c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mimecast.qa.api.PostCodes.test_PostAPI()'><b>test_PostAPI</b><br>Test class: com.mimecast.qa.api.PostCodes<br>Parameters: ,  ["PR3 0SG", "M45 6GN", "EX165BL"]
+, {
+    "status": 200,
+    "result": [
+        {
+            "query": "PR3 0SG",
+            "result": {
+                "postcode": "PR3 0SG",
+                "quality": 1,
+                "eastings": 351012,
+                "northings": 440302,
+                "country": "England",
+                "nhs_ha": "North West",
+                "longitude": -2.746251,
+                "latitude": 53.856635,
+                "european_electoral_region": "North West",
+                "primary_care_trust": "North Lancashire Teaching",
+                "region": "North West",
+                "lsoa": "Wyre 006A",
+                "msoa": "Wyre 006",
+                "incode": "0SG",
+                "outcode": "PR3",
+                "parliamentary_constituency": "Wyre and Preston North",
+                "admin_district": "Wyre",
+                "parish": "Myerscough and Bilsborrow",
+                "admin_county": "Lancashire",
+                "admin_ward": "Brock with Catterall",
+                "ced": "Wyre Rural East",
+                "ccg": "NHS Fylde and Wyre",
+                "nuts": "Lancaster and Wyre",
+                "codes": {
+                    "admin_district": "E07000128",
+                    "admin_county": "E10000017",
+                    "admin_ward": "E05009934",
+                    "parish": "E04005340",
+                    "parliamentary_constituency": "E14001057",
+                    "ccg": "E38000226",
+                    "ced": "E58000832",
+                    "nuts": "UKD44"
+                }
+            }
+        },
+        {
+            "query": "M45 6GN",
+            "result": {
+                "postcode": "M45 6GN",
+                "quality": 1,
+                "eastings": 380416,
+                "northings": 406002,
+                "country": "England",
+                "nhs_ha": "North West",
+                "longitude": -2.297052,
+                "latitude": 53.55028,
+                "european_electoral_region": "North West",
+                "primary_care_trust": "Bury",
+                "region": "North West",
+                "lsoa": "Bury 019C",
+                "msoa": "Bury 019",
+                "incode": "6GN",
+                "outcode": "M45",
+                "parliamentary_constituency": "Bury South",
+                "admin_district": "Bury",
+                "parish": "Bury, unparished area",
+                "admin_county": null,
+                "admin_ward": "Pilkington Park",
+                "ced": null,
+                "ccg": "NHS Bury",
+                "nuts": "Greater Manchester North East",
+                "codes": {
+                    "admin_district": "E08000002",
+                    "admin_county": "E99999999",
+                    "admin_ward": "E05000677",
+                    "parish": "E43000156",
+                    "parliamentary_constituency": "E14000612",
+                    "ccg": "E38000024",
+                    "ced": "E99999999",
+                    "nuts": "UKD37"
+                }
+            }
+        },
+        {
+            "query": "EX165BL",
+            "result": {
+                "postcode": "EX16 5BL",
+                "quality": 1,
+                "eastings": 294478,
+                "northings": 112252,
+                "country": "England",
+                "nhs_ha": "South West",
+                "longitude": -3.50197,
+                "latitude": 50.900064,
+                "european_electoral_region": "South West",
+                "primary_care_trust": "Devon",
+                "region": "South West",
+                "lsoa": "Mid Devon 005C",
+                "msoa": "Mid Devon 005",
+                "incode": "5BL",
+                "outcode": "EX16",
+                "parliamentary_constituency": "Tiverton and Honiton",
+                "admin_district": "Mid Devon",
+                "parish": "Tiverton",
+                "admin_county": "Devon",
+                "admin_ward": "Westexe",
+                "ced": "Tiverton West",
+                "ccg": "NHS Devon",
+                "nuts": "Devon CC",
+                "codes": {
+                    "admin_district": "E07000042",
+                    "admin_county": "E10000008",
+                    "admin_ward": "E05003531",
+                    "parish": "E04003055",
+                    "parliamentary_constituency": "E14000996",
+                    "ccg": "E38000230",
+                    "ced": "E58000304",
+                    "nuts": "UKK43"
+                }
+            }
+        }
+    ]
+}, Positive, POST, DataSetId: 1</td>
+<td></td>
+<td>0</td>
+<td>com.mimecast.qa.api.PostCodes@68c4039c</td></tr>
+<tr>
+<td title='com.mimecast.qa.api.PostCodes.test_PostCodes()'><b>test_PostCodes</b><br>Test class: com.mimecast.qa.api.PostCodes<br>Parameters: ?q=TW31SJ, NA, {
+  "status": 200,
+  "result": [
+    {
+      "postcode": "TW3 1SJ",
+      "quality": 1,
+      "eastings": 514664,
+      "northings": 175853,
+      "country": "England",
+      "nhs_ha": "London",
+      "longitude": -0.350555,
+      "latitude": 51.470035,
+      "european_electoral_region": "London",
+      "primary_care_trust": "Hounslow",
+      "region": "London",
+      "lsoa": "Hounslow 015A",
+      "msoa": "Hounslow 015",
+      "incode": "1SJ",
+      "outcode": "TW3",
+      "parliamentary_constituency": "Brentford and Isleworth",
+      "admin_district": "Hounslow",
+      "parish": "Hounslow, unparished area",
+      "admin_county": null,
+      "admin_ward": "Hounslow Central",
+      "ced": null,
+      "ccg": "NHS Hounslow",
+      "nuts": "Hounslow and Richmond upon Thames",
+      "codes": {
+        "admin_district": "E09000018",
+        "admin_county": "E99999999",
+        "admin_ward": "E05000358",
+        "parish": "E43000208",
+        "parliamentary_constituency": "E14000593",
+        "ccg": "E38000084",
+        "ced": "E99999999",
+        "nuts": "UKI75"
+      }
+    }
+  ]
+}, Positive, GET, DataSetId: 1</td>
+<td></td>
+<td>1</td>
+<td>com.mimecast.qa.api.PostCodes@68c4039c</td></tr>
+<tr>
+<td title='com.mimecast.qa.api.PostCodes.test_PostCodes()'><b>test_PostCodes</b><br>Test class: com.mimecast.qa.api.PostCodes<br>Parameters: ?q=A!234dfg, NA, {
+  "status": 200,
+  "result": null
+}, Negative, GET, DataSetId: 2</td>
+<td></td>
+<td>0</td>
+<td>com.mimecast.qa.api.PostCodes@68c4039c</td></tr>
+<tr>
+<td title='com.mimecast.qa.api.PostCodes.test_PostCodes()'><b>test_PostCodes</b><br>Test class: com.mimecast.qa.api.PostCodes<br>Parameters: /TW31SJ, NA, {
+  "status": 200,
+  "result": {
+    "postcode": "TW3 1SJ",
+    "quality": 1,
+    "eastings": 514664,
+    "northings": 175853,
+    "country": "England",
+    "nhs_ha": "London",
+    "longitude": -0.350555,
+    "latitude": 51.470035,
+    "european_electoral_region": "London",
+    "primary_care_trust": "Hounslow",
+    "region": "London",
+    "lsoa": "Hounslow 015A",
+    "msoa": "Hounslow 015",
+    "incode": "1SJ",
+    "outcode": "TW3",
+    "parliamentary_constituency": "Brentford and Isleworth",
+    "admin_district": "Hounslow",
+    "parish": "Hounslow, unparished area",
+    "admin_county": null,
+    "admin_ward": "Hounslow Central",
+    "ced": null,
+    "ccg": "NHS Hounslow",
+    "nuts": "Hounslow and Richmond upon Thames",
+    "codes": {
+      "admin_district": "E09000018",
+      "admin_county": "E99999999",
+      "admin_ward": "E05000358",
+      "parish": "E43000208",
+      "parliamentary_constituency": "E14000593",
+      "ccg": "E38000084",
+      "ced": "E99999999",
+      "nuts": "UKI75"
+    }
+  }
+}, Positive, GET, DataSetId: 3</td>
+<td></td>
+<td>0</td>
+<td>com.mimecast.qa.api.PostCodes@68c4039c</td></tr>
+</table><p>
+</body>
+</html>
