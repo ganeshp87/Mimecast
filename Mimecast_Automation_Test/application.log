@@ -1,0 +1,52 @@
+2019-12-20 12:26:17,195  INFO [TestNG] APIUtility:29 - Complete URL https://api.postcodes.io/postcodes?q=TW31SJ
+2019-12-20 12:26:17,743  INFO [TestNG] APIUtility:59 - PostCode API Response is {"status":200,"result":[{"postcode":"TW3 1SJ","quality":1,"eastings":514664,"northings":175853,"country":"England","nhs_ha":"London","longitude":-0.350555,"latitude":51.470035,"european_electoral_region":"London","primary_care_trust":"Hounslow","region":"London","lsoa":"Hounslow 015A","msoa":"Hounslow 015","incode":"1SJ","outcode":"TW3","parliamentary_constituency":"Brentford and Isleworth","admin_district":"Hounslow","parish":"Hounslow, unparished area","admin_county":null,"admin_ward":"Hounslow Central","ced":null,"ccg":"NHS Hounslow","nuts":"Hounslow and Richmond upon Thames","codes":{"admin_district":"E09000018","admin_county":"E99999999","admin_ward":"E05000358","parish":"E43000208","parliamentary_constituency":"E14000593","ccg":"E38000084","ced":"E99999999","nuts":"UKI75"}}]}
+2019-12-20 12:26:17,747  INFO [TestNG] PostCodesTest:48 - API Response from  PostCode is:: {"result":[{"country":"England","codes":{"ced":"E99999999","nuts":"UKI75","parish":"E43000208","ccg":"E38000084","admin_ward":"E05000358","parliamentary_constituency":"E14000593","admin_county":"E99999999","admin_district":"E09000018"},"ced":null,"ccg":"NHS Hounslow","latitude":51.470035,"postcode":"TW3 1SJ","european_electoral_region":"London","parliamentary_constituency":"Brentford and Isleworth","admin_ward":"Hounslow Central","eastings":514664,"admin_county":null,"lsoa":"Hounslow 015A","msoa":"Hounslow 015","admin_district":"Hounslow","quality":1,"primary_care_trust":"Hounslow","nuts":"Hounslow and Richmond upon Thames","parish":"Hounslow, unparished area","outcode":"TW3","northings":175853,"nhs_ha":"London","incode":"1SJ","region":"London","longitude":-0.350555}],"status":200}
+2019-12-20 12:26:17,748  INFO [TestNG] PostCodesTest:52 - API Expected Response Object is:: {"result":[{"country":"England","codes":{"ced":"E99999999","nuts":"UKI75","parish":"E43000208","ccg":"E38000084","admin_ward":"E05000358","parliamentary_constituency":"E14000593","admin_county":"E99999999","admin_district":"E09000018"},"ced":null,"ccg":"NHS Hounslow","latitude":51.470035,"postcode":"TW3 1SJ","european_electoral_region":"London","parliamentary_constituency":"Brentford and Isleworth","admin_ward":"Hounslow Central","eastings":514664,"admin_county":null,"lsoa":"Hounslow 015A","msoa":"Hounslow 015","admin_district":"Hounslow","quality":1,"primary_care_trust":"Hounslow","nuts":"Hounslow and Richmond upon Thames","parish":"Hounslow, unparished area","outcode":"TW3","northings":175853,"nhs_ha":"London","incode":"1SJ","region":"London","longitude":-0.350555}],"status":200}
+2019-12-20 12:26:17,748  INFO [TestNG] PostCodeValidation:32 - Actual Hash Set [200, Hounslow, TW3 1SJ, England, London]
+2019-12-20 12:26:17,748  INFO [TestNG] PostCodeValidation:56 - Actual Hash Set [200, Hounslow, TW3 1SJ, England, London]
+2019-12-20 12:26:17,751  INFO [TestNG] GeneralUtility:10 - HashSet value 1:: [200, Hounslow, TW3 1SJ, England, London]
+2019-12-20 12:26:17,751  INFO [TestNG] GeneralUtility:11 - HashSet value 2:: [200, Hounslow, TW3 1SJ, England, London]
+2019-12-20 12:26:17,752  INFO [TestNG] GeneralUtility:41 - Matched HashSet 1:: 200 in Haashset 2
+2019-12-20 12:26:17,752  INFO [TestNG] GeneralUtility:41 - Matched HashSet 1:: Hounslow in Haashset 2
+2019-12-20 12:26:17,752  INFO [TestNG] GeneralUtility:41 - Matched HashSet 1:: TW3 1SJ in Haashset 2
+2019-12-20 12:26:17,752  INFO [TestNG] GeneralUtility:41 - Matched HashSet 1:: England in Haashset 2
+2019-12-20 12:26:17,752  INFO [TestNG] GeneralUtility:41 - Matched HashSet 1:: London in Haashset 2
+2019-12-20 12:26:17,753  INFO [TestNG] GeneralUtility:51 - Matched HashSet 2:: 200 in Haashset 1
+2019-12-20 12:26:17,753  INFO [TestNG] GeneralUtility:51 - Matched HashSet 2:: Hounslow in Haashset 1
+2019-12-20 12:26:17,753  INFO [TestNG] GeneralUtility:51 - Matched HashSet 2:: TW3 1SJ in Haashset 1
+2019-12-20 12:26:17,755  INFO [TestNG] GeneralUtility:51 - Matched HashSet 2:: England in Haashset 1
+2019-12-20 12:26:17,755  INFO [TestNG] GeneralUtility:51 - Matched HashSet 2:: London in Haashset 1
+2019-12-20 12:26:17,757  INFO [TestNG] APIUtility:29 - Complete URL https://api.postcodes.io/postcodes?q=A!234dfg
+2019-12-20 12:26:17,808  INFO [TestNG] APIUtility:59 - PostCode API Response is {"status":200,"result":null}
+2019-12-20 12:26:17,809  INFO [TestNG] PostCodesTest:48 - API Response from  PostCode is:: {"result":null,"status":200}
+2019-12-20 12:26:17,809  INFO [TestNG] PostCodesTest:52 - API Expected Response Object is:: {"result":null,"status":200}
+2019-12-20 12:26:17,810  INFO [TestNG] GeneralUtility:10 - HashSet value 1:: [null]
+2019-12-20 12:26:17,810  INFO [TestNG] GeneralUtility:11 - HashSet value 2:: [null]
+2019-12-20 12:26:17,810  INFO [TestNG] GeneralUtility:41 - Matched HashSet 1:: null in Haashset 2
+2019-12-20 12:26:17,810  INFO [TestNG] GeneralUtility:51 - Matched HashSet 2:: null in Haashset 1
+2019-12-20 12:26:17,811  INFO [TestNG] APIUtility:29 - Complete URL https://api.postcodes.io/postcodes/TW31SJ
+2019-12-20 12:26:17,842  INFO [TestNG] APIUtility:59 - PostCode API Response is {"status":200,"result":{"postcode":"TW3 1SJ","quality":1,"eastings":514664,"northings":175853,"country":"England","nhs_ha":"London","longitude":-0.350555,"latitude":51.470035,"european_electoral_region":"London","primary_care_trust":"Hounslow","region":"London","lsoa":"Hounslow 015A","msoa":"Hounslow 015","incode":"1SJ","outcode":"TW3","parliamentary_constituency":"Brentford and Isleworth","admin_district":"Hounslow","parish":"Hounslow, unparished area","admin_county":null,"admin_ward":"Hounslow Central","ced":null,"ccg":"NHS Hounslow","nuts":"Hounslow and Richmond upon Thames","codes":{"admin_district":"E09000018","admin_county":"E99999999","admin_ward":"E05000358","parish":"E43000208","parliamentary_constituency":"E14000593","ccg":"E38000084","ced":"E99999999","nuts":"UKI75"}}}
+2019-12-20 12:26:17,844  INFO [TestNG] PostCodesTest:48 - API Response from  PostCode is:: {"result":{"country":"England","codes":{"ced":"E99999999","nuts":"UKI75","parish":"E43000208","ccg":"E38000084","admin_ward":"E05000358","parliamentary_constituency":"E14000593","admin_county":"E99999999","admin_district":"E09000018"},"ced":null,"ccg":"NHS Hounslow","latitude":51.470035,"postcode":"TW3 1SJ","european_electoral_region":"London","parliamentary_constituency":"Brentford and Isleworth","admin_ward":"Hounslow Central","eastings":514664,"admin_county":null,"lsoa":"Hounslow 015A","msoa":"Hounslow 015","admin_district":"Hounslow","quality":1,"primary_care_trust":"Hounslow","nuts":"Hounslow and Richmond upon Thames","parish":"Hounslow, unparished area","outcode":"TW3","northings":175853,"nhs_ha":"London","incode":"1SJ","region":"London","longitude":-0.350555},"status":200}
+2019-12-20 12:26:17,844  INFO [TestNG] PostCodesTest:52 - API Expected Response Object is:: {"result":{"country":"England","codes":{"ced":"E99999999","nuts":"UKI75","parish":"E43000208","ccg":"E38000084","admin_ward":"E05000358","parliamentary_constituency":"E14000593","admin_county":"E99999999","admin_district":"E09000018"},"ced":null,"ccg":"NHS Hounslow","latitude":51.470035,"postcode":"TW3 1SJ","european_electoral_region":"London","parliamentary_constituency":"Brentford and Isleworth","admin_ward":"Hounslow Central","eastings":514664,"admin_county":null,"lsoa":"Hounslow 015A","msoa":"Hounslow 015","admin_district":"Hounslow","quality":1,"primary_care_trust":"Hounslow","nuts":"Hounslow and Richmond upon Thames","parish":"Hounslow, unparished area","outcode":"TW3","northings":175853,"nhs_ha":"London","incode":"1SJ","region":"London","longitude":-0.350555},"status":200}
+2019-12-20 12:26:17,845  INFO [TestNG] PostCodeValidation:48 - Actual Hash Set [200, Hounslow, TW3 1SJ, England, London]
+2019-12-20 12:26:17,845  INFO [TestNG] PostCodeValidation:56 - Actual Hash Set [200, Hounslow, TW3 1SJ, England, London]
+2019-12-20 12:26:17,845  INFO [TestNG] GeneralUtility:10 - HashSet value 1:: [200, Hounslow, TW3 1SJ, England, London]
+2019-12-20 12:26:17,845  INFO [TestNG] GeneralUtility:11 - HashSet value 2:: [200, Hounslow, TW3 1SJ, England, London]
+2019-12-20 12:26:17,845  INFO [TestNG] GeneralUtility:41 - Matched HashSet 1:: 200 in Haashset 2
+2019-12-20 12:26:17,845  INFO [TestNG] GeneralUtility:41 - Matched HashSet 1:: Hounslow in Haashset 2
+2019-12-20 12:26:17,845  INFO [TestNG] GeneralUtility:41 - Matched HashSet 1:: TW3 1SJ in Haashset 2
+2019-12-20 12:26:17,846  INFO [TestNG] GeneralUtility:41 - Matched HashSet 1:: England in Haashset 2
+2019-12-20 12:26:17,846  INFO [TestNG] GeneralUtility:41 - Matched HashSet 1:: London in Haashset 2
+2019-12-20 12:26:17,846  INFO [TestNG] GeneralUtility:51 - Matched HashSet 2:: 200 in Haashset 1
+2019-12-20 12:26:17,846  INFO [TestNG] GeneralUtility:51 - Matched HashSet 2:: Hounslow in Haashset 1
+2019-12-20 12:26:17,846  INFO [TestNG] GeneralUtility:51 - Matched HashSet 2:: TW3 1SJ in Haashset 1
+2019-12-20 12:26:17,846  INFO [TestNG] GeneralUtility:51 - Matched HashSet 2:: England in Haashset 1
+2019-12-20 12:26:17,846  INFO [TestNG] GeneralUtility:51 - Matched HashSet 2:: London in Haashset 1
+2019-12-20 12:26:17,847  INFO [TestNG] APIUtility:29 - Complete URL https://api.postcodes.io/postcodes/123456
+2019-12-20 12:26:17,869  INFO [TestNG] APIUtility:59 - PostCode API Response is {"status":404,"error":"Invalid postcode"}
+2019-12-20 12:26:17,871  INFO [TestNG] PostCodesTest:48 - API Response from  PostCode is:: {"error":"Invalid postcode","status":404}
+2019-12-20 12:26:17,871  INFO [TestNG] PostCodesTest:52 - API Expected Response Object is:: {"error":"Invalid postcode","status":404}
+2019-12-20 12:26:17,872  INFO [TestNG] GeneralUtility:10 - HashSet value 1:: [Invalid postcode]
+2019-12-20 12:26:17,872  INFO [TestNG] GeneralUtility:11 - HashSet value 2:: [Invalid postcode]
+2019-12-20 12:26:17,872  INFO [TestNG] GeneralUtility:41 - Matched HashSet 1:: Invalid postcode in Haashset 2
+2019-12-20 12:26:17,873  INFO [TestNG] GeneralUtility:51 - Matched HashSet 2:: Invalid postcode in Haashset 1

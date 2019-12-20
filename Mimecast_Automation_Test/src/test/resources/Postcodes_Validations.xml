@@ -6,7 +6,7 @@
   
   <test name="PostCodesValidation">
 	<classes>
-		<class name="com.mimecast.qa.api.PostCodes">
+		<class name="com.mimecast.qa.api.PostCodesTest">
 			
 			<methods>
 			<include name="test_PostCodes"></include>

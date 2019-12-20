@@ -1,15 +1,17 @@
 package com.mimecast.qa.validations;
 
-import java.util.ArrayList;
 import java.util.HashSet;
+import org.apache.log4j.Logger;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import com.mimecast.qa.util.GeneralUtility;
 
 public class PostCodeValidation {
-
+	static final Logger logger = Logger.getLogger(PostCodeValidation.class);
+	
 	public boolean isAcutalVsExpectedIdentical(JSONObject actualPostCodeResObj, JSONObject expectedPostCodeResObj, String testType) throws JSONException {
 		boolean resultflag=false;
 		boolean compareResult=false;
@@ -27,7 +29,7 @@ public class PostCodeValidation {
 			  actualHashSet.add(actualPostCodes.getJSONObject(i).getString("region"));
 			  actualHashSet.add(actualPostCodes.getJSONObject(i).getString("admin_district"));
 			}
-			System.out.println("Actual Hash Set " + actualHashSet);
+			logger.info("Actual Hash Set " + actualHashSet);
 			
 			expectedHashSet.add(actualPostCodeResObj.getString("status"));
 			for(int i=0;i<exceptedPostCodes.length();i++){
@@ -43,7 +45,7 @@ public class PostCodeValidation {
 				  actualHashSet.add(actualPostCodeResObj.getJSONObject("result").getString("region"));
 				  actualHashSet.add(actualPostCodeResObj.getJSONObject("result").getString("admin_district"));
 				
-				System.out.println("Actual Hash Set " + actualHashSet);
+				logger.info("Actual Hash Set " + actualHashSet);
 				
 				  expectedHashSet.add(expectedPostCodeResObj.getString("status"));
 				  expectedHashSet.add(expectedPostCodeResObj.getJSONObject("result").getString("postcode"));
@@ -51,7 +53,7 @@ public class PostCodeValidation {
 				  expectedHashSet.add(expectedPostCodeResObj.getJSONObject("result").getString("region"));
 				  expectedHashSet.add(expectedPostCodeResObj.getJSONObject("result").getString("admin_district"));
 			}
-			System.out.println("Actual Hash Set " + expectedHashSet);
+			logger.info("Actual Hash Set " + expectedHashSet);
 			compareResult=GeneralUtility.compareHashSet(actualHashSet, expectedHashSet);
 			
 		}else{

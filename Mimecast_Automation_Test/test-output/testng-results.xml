@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="6" passed="4">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="PostCodesValidation" duration-ms="4060" started-at="2019-12-20T07:21:23Z" finished-at="2019-12-20T07:21:28Z">
+  <suite name="PostCodesValidation" duration-ms="1129" started-at="2019-12-20T12:20:22Z" finished-at="2019-12-20T12:20:24Z">
     <groups>
     </groups>
-    <test name="PostCodesValidation" duration-ms="4060" started-at="2019-12-20T07:21:23Z" finished-at="2019-12-20T07:21:28Z">
-      <class name="com.mimecast.qa.api.PostCodes">
-        <test-method status="PASS" signature="initSuite(java.lang.String)[pri:0, instance:com.mimecast.qa.api.PostCodes@68c4039c]" name="initSuite" is-config="true" duration-ms="28" started-at="2019-12-20T07:21:23Z" finished-at="2019-12-20T07:21:23Z">
+    <test name="PostCodesValidation" duration-ms="1129" started-at="2019-12-20T12:20:22Z" finished-at="2019-12-20T12:20:24Z">
+      <class name="com.mimecast.qa.api.PostCodesTest">
+        <test-method status="PASS" signature="initSuite(java.lang.String)[pri:0, instance:com.mimecast.qa.api.PostCodesTest@52a86356]" name="initSuite" is-config="true" duration-ms="13" started-at="2019-12-20T12:20:22Z" finished-at="2019-12-20T12:20:22Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initSuite -->
-        <test-method status="PASS" signature="test_PostCodes(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.mimecast.qa.util.DataProviderIndex)[pri:0, instance:com.mimecast.qa.api.PostCodes@68c4039c]" name="test_PostCodes" duration-ms="1999" started-at="2019-12-20T07:21:24Z" data-provider="PostCodesAPI" finished-at="2019-12-20T07:21:26Z">
+        <test-method status="PASS" signature="test_PostCodes(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.mimecast.qa.util.DataProviderIndex)[pri:0, instance:com.mimecast.qa.api.PostCodesTest@52a86356]" name="test_PostCodes" duration-ms="596" started-at="2019-12-20T12:20:23Z" data-provider="PostCodesAPI" finished-at="2019-12-20T12:20:23Z">
           <params>
             <param index="0">
               <value>
@@ -93,7 +93,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PostCodes -->
-        <test-method status="PASS" signature="test_PostCodes(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.mimecast.qa.util.DataProviderIndex)[pri:0, instance:com.mimecast.qa.api.PostCodes@68c4039c]" name="test_PostCodes" duration-ms="116" started-at="2019-12-20T07:21:26Z" data-provider="PostCodesAPI" finished-at="2019-12-20T07:21:26Z">
+        <test-method status="PASS" signature="test_PostCodes(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.mimecast.qa.util.DataProviderIndex)[pri:0, instance:com.mimecast.qa.api.PostCodesTest@52a86356]" name="test_PostCodes" duration-ms="75" started-at="2019-12-20T12:20:23Z" data-provider="PostCodesAPI" finished-at="2019-12-20T12:20:23Z">
           <params>
             <param index="0">
               <value>
@@ -132,7 +132,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PostCodes -->
-        <test-method status="PASS" signature="test_PostCodes(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.mimecast.qa.util.DataProviderIndex)[pri:0, instance:com.mimecast.qa.api.PostCodes@68c4039c]" name="test_PostCodes" duration-ms="100" started-at="2019-12-20T07:21:26Z" data-provider="PostCodesAPI" finished-at="2019-12-20T07:21:26Z">
+        <test-method status="PASS" signature="test_PostCodes(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.mimecast.qa.util.DataProviderIndex)[pri:0, instance:com.mimecast.qa.api.PostCodesTest@52a86356]" name="test_PostCodes" duration-ms="40" started-at="2019-12-20T12:20:23Z" data-provider="PostCodesAPI" finished-at="2019-12-20T12:20:23Z">
           <params>
             <param index="0">
               <value>
@@ -205,77 +205,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PostCodes -->
-        <test-method status="FAIL" signature="test_PostCodes(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.mimecast.qa.util.DataProviderIndex)[pri:0, instance:com.mimecast.qa.api.PostCodes@68c4039c]" name="test_PostCodes" duration-ms="82" started-at="2019-12-20T07:21:26Z" data-provider="PostCodesAPI" finished-at="2019-12-20T07:21:26Z">
+        <test-method status="PASS" signature="test_PostCodes(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.mimecast.qa.util.DataProviderIndex)[pri:0, instance:com.mimecast.qa.api.PostCodesTest@52a86356]" name="test_PostCodes" duration-ms="27" started-at="2019-12-20T12:20:23Z" data-provider="PostCodesAPI" finished-at="2019-12-20T12:20:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{
-  "postcodes" : ["PR3 0SG", "M45 6GN", "EX165BL"]
-}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[POST]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[DataSetId: 4]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.mimecast.qa.validations.PostCodeValidation.isAcutalVsExpectedIdentical(PostCodeValidation.java:59)
-	at com.mimecast.qa.api.PostCodes.test_PostCodes(PostCodes.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_PostCodes -->
-        <test-method status="FAIL" signature="test_PostCodes(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.mimecast.qa.util.DataProviderIndex)[pri:0, instance:com.mimecast.qa.api.PostCodes@68c4039c]" name="test_PostCodes" duration-ms="94" started-at="2019-12-20T07:21:26Z" data-provider="PostCodesAPI" finished-at="2019-12-20T07:21:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[/:TW3%201SJ]]>
+                <![CDATA[/123456]]>
               </value>
             </param>
             <param index="1">
@@ -298,47 +232,19 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[]]>
+                <![CDATA[GET]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[DataSetId: 5]]>
+                <![CDATA[DataSetId: 4]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.mimecast.qa.validations.PostCodeValidation.isAcutalVsExpectedIdentical(PostCodeValidation.java:59)
-	at com.mimecast.qa.api.PostCodes.test_PostCodes(PostCodes.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PostCodes -->
-        <test-method status="PASS" signature="test_PostAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.mimecast.qa.util.DataProviderIndex)[pri:0, instance:com.mimecast.qa.api.PostCodes@68c4039c]" name="test_PostAPI" duration-ms="847" started-at="2019-12-20T07:21:27Z" data-provider="PostAPI" finished-at="2019-12-20T07:21:28Z">
+        <test-method status="PASS" signature="test_PostAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.mimecast.qa.util.DataProviderIndex)[pri:0, instance:com.mimecast.qa.api.PostCodesTest@52a86356]" name="test_PostAPI" duration-ms="208" started-at="2019-12-20T12:20:23Z" data-provider="PostAPI" finished-at="2019-12-20T12:20:24Z">
           <params>
             <param index="0">
               <value>
@@ -493,7 +399,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PostAPI -->
-      </class> <!-- com.mimecast.qa.api.PostCodes -->
+      </class> <!-- com.mimecast.qa.api.PostCodesTest -->
     </test> <!-- PostCodesValidation -->
   </suite> <!-- PostCodesValidation -->
 </testng-results>

@@ -1,11 +1,10 @@
 com\mimecast\qa\base\BaseBackEndTest.class
-com\mimecast\qa\util\APIResponse.class
+com\mimecast\qa\util\DataProviderUtility.class
+com\mimecast\qa\environment\EnvironmentConfig.class
 com\mimecast\qa\base\BaseTest.class
 com\mimecast\qa\util\DataProviderIndex.class
 com\mimecast\qa\util\GeneralUtility.class
 com\mimecast\qa\util\APIUtility.class
 com\mimecast\qa\util\Payload.class
 com\mimecast\qa\validations\PostCodeValidation.class
-com\mimecast\qa\util\DataProviderUtility.class
-com\mimecast\qa\environment\EnvironmentConfig.class
 com\mimecast\qa\util\ExcelUtility.class
